@@ -19,9 +19,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#">Projects</a>
-        <a class="nav-link" href="#">About Me</a>
-        <a class="nav-link" href="#">GitHub</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#aboutme">About Me</a>
+        <a class="nav-link" href="https://github.com/aungy5?tab=repositories">GitHub</a>
       </div>
     </div>
   </nav>
@@ -33,17 +33,17 @@
       <div class="d-flex flex-column">
         <!-- Add classes to create a column that spans full width on mobile and half width on larger screens -->
         <div class="col-12">
-          <img class="img-fluid" src="https://via.placeholder.com/1920x1080" alt="video placeholder" />
+          <h1>Welcome to my Landing Page!</h1>
+          <img class="img-fluid" src="assets/images/code.webp" alt="video placeholder" />
         </div>
         <!-- Add classes to create a column that spans full width on mobile and half width on larger screens -->
         <div class="col-12">
-          <h1>Welcome to my Landing Page.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, reprehenderit! Placeat quo
-            necessitatibus porro corporis quasi architecto sit aspernatur inventore, perspiciatis nulla hic soluta ipsum
-            ipsa sed iure dolorum! Tenetur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatem
-            dolorum earum esse recusandae facere aliquam. Excepturi facilis sint nesciunt ipsa, eveniet facere in quidem
-            voluptas exercitationem distinctio commodi laborum!</p>
-          <button class="btn btn-primary">GitHub</button>
+          <h1 id="aboutme">About Me</h1>
+          <p>Thanks for checking me out, I am excited that you are here! My name is Andrew Ungvary and I am an aspiring software developer based in Philadelphia, PA. I started coding just a few months ago
+            at the Penn LPS coding boot camp, and have been developing some projects as I go thru the bootcamp. I will add my projects on this page, with a brief description of their functionality and a 
+            link to the deployed application. If you have any questions or comments about my work, feel free to contact me using the form at the bottom of the page. 
+          </p>
+          <button class="btn btn-secondary"><a href="https://github.com/aungy5?tab=repositories" class="link-light">GitHub</button></a>
         </div>
       </div>
     </div>
@@ -57,18 +57,21 @@
         <h2>My Projects</h2>
 
         <!-- Add classes to create a row with content having space around it -->
-        <section class="row align-items-end">
+        <section class="row align-items-top">
           <!-- Add classes to create a column that spans full width on mobile, half width on medium screens, and 1/3 on larger screens -->
-          <div class="mb-3 col-12 col-md-6 col-lg-4">
+          <div class="mb-3 col-12 col-md-6 col-lg-4" id="projects">
             <div class="card">
               <h3 class="card-header">
                 Password Generator
               </h3>
               <div class="card-body">
                 <p class="card-text">
-                  HTML and Javascript work together to create a random password based on user inputs. After entering their desired criteria, the user will be given a secure password in the text box on the center of the page. The user can then copy the password to their clipboard using the “Copy Password” button.
+                  HTML and Javascript work together to create a random password based on user inputs. After entering their desired criteria, 
+                  the user will be given a secure password in the text box on the center of the page. The user can then copy the password to 
+                  their clipboard using the “Copy Password” button. 
+                  This is helpful in organizations where secure passwords need to be generated on a regular basis.
                 </p>
-                <button class="btn btn-block btn-info"><a href="https://aungy5.github.io/HW_3/">Link to deployed application</a></button>
+                <button class="btn btn-block btn-light"><a href="https://aungy5.github.io/HW_3/">Link to deployed application</a></button>
               </div>
             </div>
           </div>
@@ -80,9 +83,12 @@
               </h3>
               <div class="card-body">
                 <p class="card-text">
-                  In this assignment we were asked to create a coding quiz using JavaScript, HTML, and CSS. A key point of this assignment was the idea of using local storage to store running table of highscores on the page. By using local storage, we are able to keep the high score values even when the page is refreshed.
+                  In this assignment we were asked to create a coding quiz using JavaScript, HTML, and CSS. A key point of this assignment was the idea of using local storage to store running table of highscores on the page. 
+                  By using local storage, we are able to keep the high score values even when the page is refreshed. Quiz questions are generated dynamically on the page 
+                  using javascript, so that they do not all have to appear on the page at once. This enables us to have a cleaner UI that presents the user with one 
+                  question at a time, instead of a long scrolling list of questions. 
                 </p>
-                <button class="btn btn-block btn-info"><a href="https://aungy5.github.io/HW_4/">Link to deployed application</a></button>
+                <button class="btn btn-block btn-light"><a href="https://aungy5.github.io/HW_4/">Link to deployed application</a></button>
               </div>
             </div>
           </div>
@@ -90,13 +96,16 @@
           <div class="mb-3 col-12 col-md-6 col-lg-4">
             <div class="card">
               <h3 class="card-header">
-                Daily Planner
+                StarBooks App
               </h3>
               <div class="card-body">
                 <p class="card-text">
-                  In this activity we were asked to create a daily planner that people could use to keep a list of tasks they need to complete throughout the day. We were also required to use local storage to save the events, so that when the page is refreshed the list remains the same. We were also required to bring in the moment.js library in order to work with dates/times, which enables the dynamic color coding of time of day. 
+                  For our first project, we created an app that would help people find a book to read. There are plenty of book sites on the internet, but we wanted to consolidate all the data these sites provide into a one-stop-shop for the user. 
+                  We were able to do this by using the Google Books and NYT api. As we worked on this app more and more we realized this could be a very valuable tool for 
+                  librarians to use when they need to help a person find a book to read. We discovered that librarians have many tools that account for literary merit, 
+                  but not necessarily trends or popularity. With our app, librarians can ensure that their collections include popular and relevant works for a given topic. 
                 </p>
-                <button class="btn btn-block btn-info"><a href="https://aungy5.github.io/Daily-Planner/">Link to deployed application</a></button>
+                <button class="btn btn-block btn-light"><a href="https://az84.github.io/Project-1/">Link to deployed application</a></button>
               </div>
             </div>
           </div>
@@ -104,14 +113,11 @@
       </div>
 
       <!-- Add classes to create a column that spans full width on mobile and 1/4 on larger screens -->
-      <div class="col-12 col-lg-3">
-        <h2>About Me</h2>
+      <div class="col-12 col-lg-3" id="aboutme">
+        <h2>More To Come Soon!</h2>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. A deleniti illo amet veniam. Enim dignissimos sint,
-          modi voluptate libero corporis ipsa consectetur commodi dolorum dolores vitae? Odit perspiciatis iure placeat.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, neque ab doloremque, harum corporis
-          voluptas explicabo amet culpa, odit autem totam itaque voluptatibus ipsa quos aperiam eius vel? Commodi,
-          nesciunt.
+          I will continue to add more projects here as they are completed. Stay tuned for more to come, and if you have any 
+          suggestions as to what I could build, feel free to submit them in the form at the bottom of the page.
         </p>
       </div>
     </section>
@@ -126,7 +132,7 @@
           <h2>Andrew Ungvary, Inc.</h2>
 
           <h5>
-            Call us at <a href="tel:555.555.5555"></a>555.555.5555</a>
+            Call me at <a href="tel:555.555.5555"></a>555.555.5555</a>
           </h5>
 
           <h5>
